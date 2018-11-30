@@ -1,0 +1,11 @@
+version: '2'
+services:
+    spigot:
+        build: .
+        image: spigot:1.12.2
+        ports: 
+        - 25565:25565
+        - 25565:25565/udp
+        - 25575:25575
+        environment:
+        - EULA=1
